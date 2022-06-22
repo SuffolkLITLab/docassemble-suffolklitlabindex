@@ -1,0 +1,20 @@
+metadata:
+  title: Suffolk Legal Innovation and Technology Lab
+  short title: LIT Lab
+  temporary session: True 
+---
+mandatory: True
+event: index
+question: |
+  Suffolk Legal Innovation and Technology Lab
+subquestion: |
+  [CENTER]
+  [FILE litlab_seal.jpg]
+  
+  This server is for hosting apps written by students and fellows in the
+  Suffolk University Law School [Legal Innovation and Technology Lab](https://suffolklitlab.org/).
+  
+  You can view sample work at [courtformsonline.org](https://courtformsonline.org)
+ 
+  
+  
