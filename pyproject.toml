@@ -7,19 +7,21 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "docassemble.suffolklitlabindex"
 version = "1.0.0"
-description = "A docassemble extension."
+description = "An index page with terms of use for the LIT Lab's docassemble development server"
 readme = "README.md"
 authors = [
     { name = "Quinten Steenhuis", email = "qsteenhuis@suffolk.edu" },
 ]
-dependencies = []
+dependencies = [
+    "docassemble.ALToolbox @ git+https://github.com/SuffolkLITLab/docassemble-ALToolbox.git@main",
+]
 license = "MIT"
 license-files = [
     "LICENSE",
 ]
 
 [project.urls]
-Homepage = "https://docassemble.org"
+Homepage = "https://assemblyline.suffolklitlab.org/"
 
 [tool.setuptools.packages.find]
 where = [
