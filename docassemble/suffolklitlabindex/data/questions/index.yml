@@ -19,7 +19,7 @@ question: |
   Suffolk Legal Innovation and Technology Lab development server terms of use
 subquestion: |
   [CENTER]
-  [FILE lit-lab-logo-small.svg]
+  [FILE lit-lab-logo-small.svg, None, The LIT Lab Logo, a torch next to the word 'LIT']
 
   ${ display_template( terms_of_use, scrollable=True ) }
 action buttons: 
