@@ -1,16 +1,21 @@
 ---
 include:
+  - docassemble.AssemblyLine:assembly_line.yml
+  - docassemble.LITLabTheme:main.yml
   - docassemble.ALToolbox:display_template.yml
 ---
+features:
+  css:
+    - custom.css
+---
 metadata:
-  title: Suffolk Legal Innovation and Technology Lab
-  short title: LIT Lab
+  title: Development server terms of use
   temporary session: True 
 ---
 mandatory: True
 event: index
 question: |
-  Suffolk Legal Innovation and Technology Lab
+  Suffolk Legal Innovation and Technology Lab development server terms of use
 subquestion: |
   [CENTER]
   [FILE lit-lab-logo-small.svg]
