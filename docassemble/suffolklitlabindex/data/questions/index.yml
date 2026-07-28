@@ -14,6 +14,7 @@ metadata:
 ---
 mandatory: True
 event: index
+id: LITLab-dev-server terms of use
 question: |
   Suffolk Legal Innovation and Technology Lab development server terms of use
 subquestion: |
