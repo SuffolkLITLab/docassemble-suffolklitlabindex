@@ -1,20 +1,87 @@
+---
+include:
+  - docassemble.AssemblyLine:assembly_line.yml
+  - docassemble.LITLabTheme:main.yml
+  - docassemble.ALToolbox:display_template.yml
+---
+features:
+  css:
+    - custom.css
+---
 metadata:
-  title: Suffolk Legal Innovation and Technology Lab
-  short title: LIT Lab
+  title: Development server terms of use
   temporary session: True 
 ---
 mandatory: True
 event: index
+id: LITLab-dev-server terms of use
 question: |
-  Suffolk Legal Innovation and Technology Lab
+  Suffolk Legal Innovation and Technology Lab development server terms of use
 subquestion: |
   [CENTER]
-  [FILE litlab_seal.jpg]
+  [FILE lit-lab-logo-small.svg, None, The LIT Lab Logo, a torch next to the word 'LIT']
+
+  ${ display_template( terms_of_use, scrollable=True ) }
+action buttons: 
+  - label: Go to the Playground
+    action: ${ url_of('playground', source="terms_of_use") }
+---
+template: terms_of_use
+subject: ""
+content: |
+  <h2 class="h4">Terms of use</h2>
   
-  This server is for hosting apps written by students and fellows in the
-  Suffolk University Law School [Legal Innovation and Technology Lab](https://suffolklitlab.org/).
+  By using this server you agree to the [Document Assembly Line community practices](https://assemblyline.suffolklitlab.org/docs/community_practices) and the following terms.
+
+  <h3 class="h5">Purpose</h3>
+
+  This server is maintained by the [Legal Innovation and Technology Lab (LIT Lab)](https://suffolklitlab.org/) ("we," "our," and "us") at [Suffolk University Law School](https://www.suffolk.edu/law/) for use by:
+
+  - LIT Lab faculty, staff, and students
+  - [Document Assembly Line](https://assemblyline.suffolklitlab.org/) [partners](https://assemblyline.suffolklitlab.org/#partners) and [volunteers](https://assemblyline.suffolklitlab.org/docs/volunteer/sign_up/)
+  - Other people authorized by the LIT Lab ([contact us](mailto:litlab@suffolk.edu) for authorization)
+
+  This is a shared development server for learning and experimenting with [docassemble](https://docassemble.org/) interviews. (See examples at [Court Forms Online](https://courtformsonline.org/).) We also use it when building and testing [our Document Assembly Line code](https://assemblyline.suffolklitlab.org/docs/get_started#our-code).
+
+  <h3 class="h5">Use at your own risk</h3>
+
+  This server is provided "as is," without warranties or guarantees of any kind.
   
-  You can view sample work at [courtformsonline.org](https://courtformsonline.org)
- 
+  We may suspend or terminate your access at any time without notice. We may suspend, restart, modify, or take down the server or content at any time without notice.
+
+  Suffolk University, the LIT Lab, and their faculty, staff, students, and affiliates are not liable for any damages arising from your use of this server, to the fullest extent permitted by law.
   
+  <h3 class="h5">Prohibited uses</h3>
+
+  - You may not host production interviews on this server
+  - You may not charge a fee for access
+  - You may not use the server in a way that is unrelated to its purpose
+  - You may not attempt to gain unauthorized access, interfere with the server operation or security, run malicious code, or use this server for unlawful purposes
+
+  <h3 class="h5">Data and privacy</h3>
+
+  By using this server, you grant us any permissions reasonably necessary to host, maintain, back up, and administer the service.
+
+  We make reasonable efforts to secure this server, but it is not intended for storing information securely. Do not upload or enter confidential, sensitive, or personally identifiable information unless you have permission and you understand and accept the risks.
+
+  You are responsible for maintaining your own backups. We may delete accounts, projects, interviews, or other information at any time.
+
+  <h3 class="h5">Support</h3>
   
+  This is a shared development server for learning and experimentation. Interruptions and maintenance are expected and support is provided on a best-effort basis.
+  
+  If this server is down, post a message in the [Document Assembly Line **Coding help** channel in Teams](https://teams.microsoft.com/l/channel/19%3Ae16e9e9701a5445ea4035b5cb776a4cc%40thread.tacv2/Coding%20help?groupId=eaa9bd9d-cf39-4686-8f30-e55aa9d98c75&tenantId=78733fa9-540e-4eb8-bf29-73c4eeb63412) or [email us](mailto:litlab@suffolk.edu).
+  
+  <h3 class="h5">Intellectual property</h3>
+
+  We do not claim ownership of your interview code or any other information you upload.
+  
+  <h3 class="h5">Changes to these terms</h3>
+
+  We may update these terms at any time. By continuing to use this server, you agree to the revised terms.
+
+  Changes are documented at [github.com/SuffolkLITLab/docassemble-suffolklitlabindex](https://github.com/SuffolkLITLab/docassemble-suffolklitlabindex/commits/main/docassemble/suffolklitlabindex/data/questions/index.yml).
+
+  <h3 class="h5">Contact</h3>
+
+  Email questions to [litlab@suffolk.edu](mailto:litlab@suffolk.edu).
