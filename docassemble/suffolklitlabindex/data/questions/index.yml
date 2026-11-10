@@ -25,6 +25,8 @@ subquestion: |
 action buttons: 
   - label: Go to the Playground
     action: ${ url_of('playground', source="terms_of_use") }
+  - label: Go to the Weaver
+    action: '/al/editor?source=terms_of_use'
 ---
 template: terms_of_use
 subject: ""
